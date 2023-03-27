@@ -1,0 +1,35 @@
+{
+	"name": "hookejs",
+	"version": "2.0.0-rc-1",
+	"description": "An open source plagiarism detector and autocitation built in node.",
+	"main": "lib/index.js",
+	"scripts": {
+		"test": "node lib/test.js",
+		"format": "npx prettier --write **/*.{ts,json}",
+		"build": "tsc && cp src/*.js lib/",
+		"all": "npm run format && npm run build"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/hhhhhhhhhn/HookeJs.git"
+	},
+	"author": "hhhhhhhhhn",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/oekshido/HookeJs/issues"
+	},
+	"homepage": "https://github.com/oekshido/HookeJs#readme",
+	"dependencies": {
+		"snowball-stemmers": "^0.6.0"
+	},
+	"devDependencies": {
+		"@types/node": "^18.14.1",
+		"@types/snowball-stemmers": "^0.6.0",
+		"itworksjs": "^1.1.1",
+		"prettier": "^2.0.5",
+		"typescript": "^4.9.5"
+	},
+	"bin": {
+		"hooke": "./cli.js"
+	}
+}
